@@ -1,0 +1,12 @@
+[submodule "lib/plugincpp"]
+	path = lib/plugincpp
+	url = https://github.com/onepointerT/libplugincpp.git
+[submodule "lib/logcpp"]
+	path = lib/logcpp
+	url = https://github.com/onepointerT/liblogcpp.git
+[submodule "lib/passengercpp"]
+	path = lib/passengercpp
+	url = https://github.com/onepointerT/passengercpp.git
+[submodule "lib/dscpp"]
+	path = lib/dscpp
+	url = https://github.com/onepointerT/libdscpp.git
