@@ -7,6 +7,8 @@
 
 namespace cocu {
 
+class DesktopContext
 
+{};
 
 } // namespace cocu
