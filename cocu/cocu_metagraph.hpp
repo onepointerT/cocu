@@ -4,6 +4,7 @@
 #pragma once
 
 #include "cocu_actioncallback.hpp"
+#include "cocu_apiplugin.hpp"
 #include "cocu_metatree.hpp"
 #include "desktopcontext.hpp"
 
@@ -15,15 +16,15 @@ namespace cocu {
 namespace meta {
 
 
-template< class ContentT = cocu::MetaTree >
+template< class ContentT = cocu::MetaTree, typename numID = unsigned int >
 class Edge
-    :   public passenger::Edge< passenger::GraphPassengerNumber<>, cocu::meta::Action >
+    :   public passenger::Edge< cocu::meta::ApiAbsolvent<numID>, cocu::meta::Action >
 {};
 
 
-template< class ContentT = cocu::MetaTree, class EdgeT = cocu::meta::Edge< ContentT > >
+template< class ContentT = cocu::MetaTree, class EdgeT = cocu::meta::Edge< ContentT >, typename numID = unsigned int >
 class Node
-    :   public passenger::PassengerNode< passenger::GraphPassengerNumber<>, 
+    :   public passenger::PassengerNode< cocu::meta::ApiAbsolvent<numID>, EdgeT >
 {};
 
 

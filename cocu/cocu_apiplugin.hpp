@@ -9,6 +9,8 @@
 #include <type_traits>
 
 #include "action.hpp"
+#include "graph_passenger.hpp"
+#include "passenger.hpp"
 
 namespace cocu {
 namespace plugin {
@@ -22,6 +24,12 @@ class ApiAdaption
 public:
 };
 
+namespace meta {
+template< typename numId = unsigned int >
+class ApiAbsolvent
+    :   public passenger::GraphPassengerNumber< passenger::PassengerNumber<numID> >
+{};
+} // namespace meta
 
 
 template< class ExtendingClassT >

@@ -5,6 +5,7 @@
 
 #include "cocu_actioncallback.hpp"
 #include "desktopcontext.hpp"
+#include "cocu_predictional.hpp"
 
 #include "tree.hpp"
 
@@ -15,7 +16,7 @@ namespace meta {
 
 template< class ContentT >
 class Tree
-    :   public passenger::Tree< ContentT, cocu::meta::Action >
+    :   public passenger::Tree< ContentT, cocu::Predictional >
 {};
 
 

@@ -3,10 +3,9 @@
 
 #pragma once
 
-
-
-namespace cocu {
-
-
-
-} // namespace cocu
+#include "cocu_context.hpp"
+#include "cocu_predictional.hpp"
+#include "cocu_rest.hpp"
+#include "desktopcontext.hpp"
+#include "hidptr.hpp"
+#include "metadesktop.hpp"

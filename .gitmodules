@@ -10,3 +10,6 @@
 [submodule "lib/dscpp"]
 	path = lib/dscpp
 	url = https://github.com/onepointerT/libdscpp.git
+[submodule "lib/truth"]
+	path = lib/truth
+	url = https://github.com/onepointerT/libtruth.git

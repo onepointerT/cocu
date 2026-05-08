@@ -27,7 +27,7 @@ add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/lib/ )
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/cocu )
 file ( GLOB LIBCOCU_SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/cocu/*.cpp )
 add_library( cocu STATIC ${LIBCOCU_SOURCE} )
-# target_link_libraries( coculib  )
+target_link_libraries( cocu passengercpp oneptr_priobool )
 
 
 if( COCU_HEADER_INSTALL_DIR )
